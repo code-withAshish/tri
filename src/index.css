@@ -27,4 +27,23 @@
   .design-text-value{
     color: #747474;
   }
+  .win-blue {
+    background-color: #5c88dd;
+    color: white;
+  }
+
+  .win-blue-head{
+    color: white;
+    background-color: #174fbb;
+  }
+  .text-white {
+    color: white
+  }
+  .bg-red-button{
+    background-color: red !important;
+  }
+
+  .bg-red-button:hover{
+    background-color: #333333 !important;
+  }
 }

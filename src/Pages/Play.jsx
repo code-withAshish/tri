@@ -4,6 +4,8 @@ import data from "../assets/tier1.json";
 import PlayerCard from "../components/PlayerCard";
 import { CiSearch } from "react-icons/ci";
 import { FaHeart } from "react-icons/fa";
+import axios from "axios";
+import { set } from "mongoose";
 
 const Play = () => {
 
@@ -11,10 +13,10 @@ const Play = () => {
     const [bestSuggestion, setBestSuggestion] = useState('');
     // const [showSuggestions, setShowSuggestions] = useState(false); // Track if suggestions should be shown
     const [allSuggestions, setAllSuggestions] = useState([]); // Track all suggestions
-    const [player1, setplayer1] = useState({franchise: '', jerseyNumber: '', role: '', country: '', age: '', playerName: ''});
-    const [player2, setplayer2] = useState({franchise: '', jerseyNumber: '', role: '', country: '', age: '', playerName: ''});
-    const [player3, setplayer3] = useState({franchise: '', jerseyNumber: '', role: '', country: '', age: '', playerName: ''});
-    const [player4, setplayer4] = useState({franchise: '', jerseyNumber: '', role: '', country: '', age: '', playerName: ''});
+    const [player1, setplayer1] = useState({team: '', jerseyNumber: '', role: '', nation: '', age: '', playerName: ''});
+    const [player2, setplayer2] = useState({team: '', jerseyNumber: '', role: '', nation: '', age: '', playerName: ''});
+    const [player3, setplayer3] = useState({team: '', jerseyNumber: '', role: '', nation: '', age: '', playerName: ''});
+    const [player4, setplayer4] = useState({team: '', jerseyNumber: '', role: '', nation: '', age: '', playerName: ''});
     const [guessPlayer1, setGuessPlayer1] = useState(false);
     const [guessPlayer2, setGuessPlayer2] = useState(false);
     const [guessPlayer3, setGuessPlayer3] = useState(false);
@@ -22,9 +24,9 @@ const Play = () => {
     const [done, setDone] = useState(false);
     const [HintLeft, setHintLeft] = useState(3);
     const [LivesLeft, setLivesLeft] = useState(15);
-    // const [reveal, setReveal] = useState(false);
+    const [reveal, setReveal] = useState(false);
 
-    console.log(data);
+    // console.log(data);
     const updateLocalStorage = (key, value) => {
         localStorage.setItem(key, JSON.stringify(value));
     };
@@ -49,7 +51,7 @@ const Play = () => {
     const player2Data = localStorage.getItem('player2');
     const player3Data = localStorage.getItem('player3');
     const player4Data = localStorage.getItem('player4');
-    // const lives = localStorage.getItem('lives');
+    const lives = localStorage.getItem('lives');
 
 
     if (player1Data) {
@@ -89,20 +91,28 @@ const Play = () => {
         }
     }
 
-    // if (lives) {
-    //     setLivesLeft(JSON.parse(lives));
-    // }
+    if (lives) {
+        setLivesLeft(JSON.parse(lives));
+    } else {
+        setLivesLeft(15);
+    }
     }, []);
+
+    const updateLife = () => {
+        setLivesLeft((prevLives) => {
+            const temp = prevLives - 1;
+            if (temp === 0) {
+                return 0;
+            }
+            localStorage.setItem('lives', JSON.stringify(temp));
+            return temp;
+        });
+    }
 
     const compareInput = useCallback((inputValue) => {
 
-        setLivesLeft((prevLives) => {
-            if (prevLives === 0) {
-                return 0;
-            }
-            return prevLives - 1;
-        });
-        localStorage.setItem('lives', JSON.stringify(LivesLeft));
+        updateLife();
+
         const guess = PLAYERS.find(player => player.playerName.toLowerCase() === inputValue.toLowerCase());
     
         if (!guess) {
@@ -148,14 +158,14 @@ const Play = () => {
             if (guess.jerseyNumber === hero[i].jerseyNumber) {
                 setPlayerValue(i, 'jerseyNumber', guess.jerseyNumber);
             }
-            if (guess.franchise === hero[i].franchise) {
-                setPlayerValue(i, 'franchise', guess.franchise);
+            if (guess.team === hero[i].team) {
+                setPlayerValue(i, 'team', guess.team);
             }
             if (guess.age === hero[i].age) {
                 setPlayerValue(i, 'role', guess.role);
             }
-            if (guess.country.toLowerCase() === hero[i].country.toLowerCase()) {
-                setPlayerValue(i, 'country', guess.country);
+            if (guess.nation.toLowerCase() === hero[i].nation.toLowerCase()) {
+                setPlayerValue(i, 'nation', guess.nation);
             }
             if (guess.playerName === hero[i].playerName) {
                 setPlayerValue(i, 'playerName', guess.playerName);
@@ -185,7 +195,10 @@ const Play = () => {
     
     }, [hero, player1, player2, player3, player4]);
     
-
+    const undo = () => {
+        setHintLeft((prevHint) => prevHint + 1);
+        setReveal(false);
+    }
   const keyboardLayout = [
     ['Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P'],
     ['A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L'],
@@ -193,7 +206,14 @@ const Play = () => {
     ['Hint', 'Space', 'Enter']
   ];
   const handleKeyPress = useCallback((key) => {
-    if (key === 'Backspace') {
+    if(key === 'Hint'){
+        if(HintLeft === 0){
+            alert("No hints left");
+            return;
+        }
+        setHintLeft((prevHint) => prevHint - 1);
+        setReveal(true);
+    }else if (key === 'Backspace') {
         if(inputValue === ''){
             setBestSuggestion('');
         }
@@ -225,6 +245,7 @@ const Play = () => {
     }
 }, [inputValue, bestSuggestion, compareInput]);// Add bestSuggestion as a dependency
 
+
 useEffect(() => {
     const handleKeyDown = (event) => {
         const { key } = event;
@@ -233,7 +254,7 @@ useEffect(() => {
             //     alert("No hints left");
             //     return;
             // }
-            alert("Hint: " + hero[0].playerName);
+            // alert("Hint: " + hero[0].playerName);
             // setReveal(true);
             setHintLeft((prevHint) => prevHint - 1);
         }
@@ -293,7 +314,7 @@ const checkDisableButton = (key) => {
     if (!inputValue) {
         return false; // No input, keep button enabled
     }
-    if(done){
+    if(done || !LivesLeft){
         return true;
     }
     const combination = (inputValue + key).toLowerCase();
@@ -313,19 +334,28 @@ const checkDisableButton = (key) => {
     // Otherwise, disable the button if there's no following suggestion
     return !hasFollowingSuggestion;
 };
+//  useEffect(() => {
+    
+//     const updateToDB = async () => {
+//         const q = await axios.get('http://localhost:3000/stats');
+//         const res = q.data;
+//         res.totalGame += 1;
+//         console.log(res);
 
+//     }
+
+//     if(done){
+//         updateToDB();
+//     }
+
+//  },[done]);
 
   return (
     <>
     <div className="all">
-        {/* <div className="subhead">
-            <span className="text-lg md:text-xl lg:text-2xl">Hint</span>
-            <p className="text-sm md:text-base lg:text-lg">Guess today&#39;s player</p>
-            <span className="text-lg md:text-xl lg:text-2xl">Lives</span>
-        </div> */}
-        <div className="px-4 h-100 mt-20 flex justify-center items-center">
+        {LivesLeft===0 ? <h1>game over</h1> : done ? <h1>you win</h1> : <div className="px-4 h-100 mt-20 flex justify-center items-center">
             <div className="w-25">
-            <div className="px-4 h-100 mt-20 flex justify-between items-center">
+            <div className="px-4 flex justify-between items-center">
             <div className="w-25 flex items-center justify-center">
                 <h2 className="text-sm font-bold inline text-center"><CiSearch />{HintLeft}</h2>
             </div>
@@ -346,11 +376,18 @@ const checkDisableButton = (key) => {
                     <PlayerCard player={player4} hero={hero[3]} isGuessed={guessPlayer4} />
                 </div>
             </div>
-        </div>
+        </div>}
         <div className={`input text-gray-600 relative`}>
             <span>{inputValue ? displayInputInSuggestion() : "Enter text here.."}</span>
         </div>
-        <div className="keyboard ">
+        {reveal?(
+            <div className="keyboard py-20 px-40 bg-white">
+            <button onClick={undo} className="bg-red-button text-white py-2 px-4 rounded">Cancel</button>
+        </div>
+        
+        ) 
+        : 
+        (<div className="keyboard ">
             {keyboardLayout.map((row, rowIndex) => (
                 <div key={rowIndex} className="keyboard-row">
                     {row.map((key, keyIndex) => (
@@ -365,7 +402,8 @@ const checkDisableButton = (key) => {
                     ))}
                 </div>
             ))}
-        </div>
+        </div>)
+        }
     </div>
 </>
 

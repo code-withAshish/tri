@@ -1,191 +1,970 @@
 export const PLAYERS = [
-    { playerName: "Sai Kishore", role: "BW", price: "3 crore", country: "IN", jerseyNumber: "12", franchise: "GT"},
-    { playerName: "KL Rahul", role: "BT", price: "15 crore", country: "IN", jerseyNumber: "", franchise: "LSG" },
-    { playerName: "Ravindra Jadeja", role: "AR", price: "16 crore", country: "IN", jerseyNumber: "", franchise: "CSK" },
-    { playerName: "Sameer Rizvi", role: "BT", price: "8.4 crore", country: "", jerseyNumber: "", franchise: "CSK" },
-    { playerName: "David Willey", role: "AR", price: "2 crore", country: "SH", jerseyNumber: "", franchise: "LSG" },
-    { playerName: "Krunal Pandya", role: "AR", price: "8.25 crore", country: "IN", jerseyNumber: "", franchise: "LSG" },
-    { playerName: "Kumar Kartikeya", role: "BW", price: "20 lakh", country: "IN", jerseyNumber: "", franchise: "MI" },
-    { playerName: "Umran Malik", role: "BW", price: "4 crore", country: "", jerseyNumber: "", franchise: "SRH" },
-    { playerName: "Aryan Juyal", role: "WK", price: "20 lakh", country: "IN", jerseyNumber: "", franchise: "MI" },
-    { playerName: "Sumeet Kumar", role: "BW", price: "1 crore", country: "IN", jerseyNumber: "", franchise: "DC" },
-    { playerName: "Lungi Ngidi", role: "BW", price: "50 lakh", country: "SA", jerseyNumber: "", franchise: "DC" },
-    { playerName: "Jasprit Bumrah", role: "BW", price: "12 crore", country: "IN", jerseyNumber: "", franchise: "MI" },
-    { playerName: "Mitchell Santner", role: "AR", price: "1.9 crore", country: "", jerseyNumber: "", franchise: "CSK" },
-    { playerName: "Shreyas Iyer", role: "BT", price: "12.25 crore", country: "IN", jerseyNumber: "", franchise: "KKR" },
-    { playerName: "Anrich Nortje", role: "BW", price: "6.5 crore", country: "SA", jerseyNumber: "", franchise: "DC" },
-    { playerName: "Kuldeep Yadav", role: "BW", price: "2 crore", country: "IN", jerseyNumber: "", franchise: "DC" },
-    { playerName: "Tristan Stubbs", role: "WK", price: "50 lakh", country: "AU", jerseyNumber: "", franchise: "DC" },
-    { playerName: "Ayush Badoni", role: "BT", price: "20 lakh", country: "IN", jerseyNumber: "", franchise: "LSG" },
-    { playerName: "Jhathavedh Subramanyan", role: "BW", price: "20 lakh", country: "", jerseyNumber: "", franchise: "SRH" },
-    { playerName: "Alzarri Joseph", role: "BW", price: "11.5 crore", country: "WI", jerseyNumber: "", franchise: "RCB" },
-    { playerName: "Mayank Yadav", role: "BW", price: "20 lakh", country: "IN", jerseyNumber: "", franchise: "LSG" },
-    { playerName: "Rashid Khan", role: "BW", price: "15 crore", country: "AF", jerseyNumber: "", franchise: "GT" },
-    { playerName: "Ishan Kishan", role: "BT", price: "15.25 crore", country: "IN", jerseyNumber: "", franchise: "MI" },
-    { playerName: "Tom Curran", role: "AR", price: "1.5 crore", country: "SH", jerseyNumber: "", franchise: "RCB" },
-    { playerName: "Kumar Kushagra", role: "WK", price: "7.2 crore", country: "IN", jerseyNumber: "", franchise: "DC" },
-    { playerName: "Mayank Agarwal", role: "BT", price: "8.25 crore", country: "IN", jerseyNumber: "", franchise: "SRH" },
-    { playerName: "Avanish Rao Aravelly", role: "WK", price: "20 lakh", country: "", jerseyNumber: "", franchise: "CSK" },
-    { playerName: "Vicky Ostwal", role: "AR", price: "20 lakh", country: "IN", jerseyNumber: "", franchise: "DC" },
-    { playerName: "David Warner", role: "BT", price: "6.25 crore", country: "AU", jerseyNumber: "", franchise: "DC" },
-    { playerName: "Yudhvir Charak", role: "BW", price: "20 lakh", country: "IN", jerseyNumber: "", franchise: "MI" },
-    { playerName: "Robin Minz", role: "WK", price: "3.6 crore", country: "IN", jerseyNumber: "", franchise: "GT" },
-    { playerName: "Akash Madhwal", role: "BW", price: "20 lakh", country: "IN", jerseyNumber: "", franchise: "MI" },
-    { playerName: "Jayant Yadav", role: "BW", price: "1.7 crore", country: "IN", jerseyNumber: "", franchise: "GT" },
-    { playerName: "Ajinkya Rahane", role: "WK", price: "50 lakh", country: "IN", jerseyNumber: "", franchise: "CSK" },
-    { playerName: "Mustafizur Rahman", role: "BW", price: "2 crore", country: "", jerseyNumber: "", franchise: "CSK" },
-    { playerName: "Rajat Patidar", role: "BT", price: "20 lakh", country: "IN", jerseyNumber: "", franchise: "RCB" },
-    { playerName: "Sanvir Singh", role: "AR", price: "20 lakh", country: "", jerseyNumber: "", franchise: "SRH" },
-    { playerName: "Rachin Ravindra", role: "AR", price: "1.8 crore", country: "", jerseyNumber: "", franchise: "CSK" },
-    { playerName: "Wanindu Hasaranga", role: "AR", price: "1.5 crore", country: "", jerseyNumber: "", franchise: "SRH" },
-    { playerName: "Varun Chakravarthy", role: "BW", price: "8 crore", country: "IN", jerseyNumber: "", franchise: "KKR" },
-    { playerName: "Reece Topley", role: "BW", price: "1.9 crore", country: "SH", jerseyNumber: "", franchise: "RCB" },
-    { playerName: "Lalit Yadav", role: "AR", price: "65 lakh", country: "IN", jerseyNumber: "", franchise: "DC" },
-    { playerName: "Rudra Mahadev Patil", role: "BW", price: "20 lakh", country: "IN", jerseyNumber: "", franchise: "MI" },
-    { playerName: "Mitchell Starc", role: "BW", price: "24.75 crore", country: "AU", jerseyNumber: "", franchise: "KKR" },
-    { playerName: "Mitchell Marsh", role: "AR", price: "6.5 crore", country: "AU", jerseyNumber: "", franchise: "DC" },
-    { playerName: "T Natarajan", role: "BW", price: "4 crore", country: "", jerseyNumber: "", franchise: "SRH" },
-    { playerName: "Daryl Mitchell", role: "AR", price: "14 crore", country: "", jerseyNumber: "", franchise: "CSK" },
-    { playerName: "Chetan Sakariya", role: "BW", price: "50 lakh", country: "IN", jerseyNumber: "", franchise: "KKR" },
-    { playerName: "Rishabh Pant", role: "Wicketkeeper", price: "16 crore", country: "IN", jerseyNumber: "", franchise: "DC" },
-    { playerName: "Naveen-ul-Haq", role: "BW", price: "50 lakh", country: "AF", jerseyNumber: "", franchise: "LSG" },
-    { playerName: "Heinrich Klaasen", role: "BT", price: "5.25 crore", country: "", jerseyNumber: "", franchise: "SRH" },
-    { playerName: "Mujeeb Ur Rahman", role: "BT", price: "2 crore", country: "AF", jerseyNumber: "", franchise: "KKR" },
-    { playerName: "M Siddharth", role: "BW", price: "2.4 crore", country: "IN", jerseyNumber: "", franchise: "LSG" },
-    { playerName: "Washington Sundar", role: "AR", price: "8.75 crore", country: "", jerseyNumber: "", franchise: "SRH" },
-    { playerName: "Abdul Samad", role: "BT", price: "4 crore", country: "", jerseyNumber: "", franchise: "SRH" },
-    { playerName: "Umesh Yadav", role: "BW", price: "5.8 crore", country: "IN", jerseyNumber: "", franchise: "GT" },
-    { playerName: "Nicholas Pooran", role: "BT", price: "16 crore", country: "WI", jerseyNumber: "", franchise: "LSG" },
-    { playerName: "Shardul Thakur", role: "AR", price: "4 crore", country: "", jerseyNumber: "", franchise: "CSK" },
-    { playerName: "Suyash Prabhudesai", role: "AR", price: "30 lakh", country: "IN", jerseyNumber: "", franchise: "RCB" },
-    { playerName: "Jhye Richardson", role: "BW", price: "5 crore", country: "AU", jerseyNumber: "", franchise: "DC" },
-    { playerName: "Manav Suthar", role: "BW", price: "20 lakh", country: "IN", jerseyNumber: "", franchise: "GT" },
-    { playerName: "Ashton Turner", role: "BT", price: "1 crore", country: "AU", jerseyNumber: "", franchise: "LSG" },
-    { playerName: "Mohsin Khan", role: "BW", price: "20 lakh", country: "IN", jerseyNumber: "", franchise: "LSG" },
-    { playerName: "Ramandeep Singh", role: "AR", price: "20 lakh", country: "IN", jerseyNumber: "", franchise: "KKR" },
-    { playerName: "Yash Dayal", role: "BW", price: "5 crore", country: "IN", jerseyNumber: "", franchise: "RCB" },
-    { playerName: "Jason Roy", role: "BT", price: "2.8 crore", country: "SH", jerseyNumber: "", franchise: "KKR" },
-    { playerName: "Ishant Sharma", role: "BW", price: "50 lakh", country: "IN", jerseyNumber: "", franchise: "DC" },
-    { playerName: "Rassie van der Dussen", role: "BT", price: "3 crore", country: "SA", jerseyNumber: "", franchise: "MI" },
-    { playerName: "Venkatesh Iyer", role: "AR", price: "8 crore", country: "IN", jerseyNumber: "", franchise: "KKR" },
-    { playerName: "Rinku Singh", role: "BT", price: "55 lakh", country: "IN", jerseyNumber: "", franchise: "KKR" },
-    { playerName: "Dewald Brevis", role: "BT", price: "3 crore", country: "SA", jerseyNumber: "", franchise: "MI" },
-    { playerName: "Dinesh Karthik", role: "Keeper-BT", price: "5.5 crore", country: "IN", jerseyNumber: "", franchise: "RCB" },
-    { playerName: "Will Jacks", role: "AR", price: "3.2 crore", country: "SH", jerseyNumber: "", franchise: "RCB" },
-    { playerName: "Spencer Johnson", role: "BW", price: "10 crore", country: "AU", jerseyNumber: "", franchise: "GT" },
-    { playerName: "Abhishek Sharma", role: "AR", price: "6.5 crore", country: "", jerseyNumber: "", franchise: "SRH" },
-    { playerName: "Sunil Narine", role: "AR", price: "6 crore", country: "WI", jerseyNumber: "", franchise: "KKR" },
-    { playerName: "Vyshak Vijaykumar", role: "BW", price: "20 lakh", country: "IN", jerseyNumber: "", franchise: "RCB" },
-    { playerName: "KS Bharat", role: "WK", price: "50 lakh", country: "IN", jerseyNumber: "", franchise: "KKR" },
-    { playerName: "Yash Dhull", role: "BT", price: "50 lakh", country: "IN", jerseyNumber: "", franchise: "DC" },
-    { playerName: "Cameron Green (Traded from MI)", role: "AR", price: "17.5 crore", country: "AU", jerseyNumber: "", franchise: "RCB" },
-    { playerName: "Joshua Little", role: "BW", price: "4.4 crore", country: "Ireland", jerseyNumber: "", franchise: "GT" },
-    { playerName: "Mahipal Lomror", role: "BT", price: "95 lakh", country: "IN", jerseyNumber: "", franchise: "RCB" },
-    { playerName: "Baba Indrajith", role: "BT", price: "20 lakh", country: "IN", jerseyNumber: "", franchise: "MI" },
-    { playerName: "Prayas Ray Barman", role: "BW", price: "20 lakh", country: "IN", jerseyNumber: "", franchise: "MI" },
-    { playerName: "Swastik Chhikara", role: "BT", price: "20 lakh", country: "IN", jerseyNumber: "", franchise: "DC" },    
-    { playerName: "Vikrant Singh", role: "AR", price: "20 lakh", country: "IN", jerseyNumber: "", franchise: "MI" },
-    { playerName: "Pat Cummins", role: "AR", price: "20.5 crore", country: "", jerseyNumber: "", franchise: "SRH" },
-    { playerName: "Marco Jansen", role: "AR", price: "4.2 crore", country: "", jerseyNumber: "", franchise: "SRH" },
-    { playerName: "Tim David", role: "AR", price: "8.25 crore", country: "Singapore", jerseyNumber: "", franchise: "MI" },
-    { playerName: "Rahul Tewatia", role: "AR", price: "9 crore", country: "IN", jerseyNumber: "", franchise: "GT" },
-    { playerName: "Axar Patel", role: "AR", price: "9 crore", country: "IN", jerseyNumber: "", franchise: "DC" },
-    { playerName: "Faf Du Plessis", role: "BT", price: "7 crore", country: "SA", jerseyNumber: "", franchise: "RCB" },
-    { playerName: "Yash Thakur", role: "BW", price: "45 lakh", country: "IN", jerseyNumber: "", franchise: "LSG" },
-    { playerName: "Pravin Dubey", role: "BW", price: "50 lakh", country: "IN", jerseyNumber: "", franchise: "DC" },
-    { playerName: "Kartik Tyagi", role: "BW", price: "60 lakh", country: "IN", jerseyNumber: "", franchise: "GT" },
-    { playerName: "Khaleel Ahmed", role: "BW", price: "5.25 crore", country: "IN", jerseyNumber: "", franchise: "DC" },
-    { playerName: "Shai Hope", role: "WK", price: "75 lakh", country: "WI", jerseyNumber: "", franchise: "DC" },
-    { playerName: "Shubman Gill", role: "BT", price: "7 crore", country: "IN", jerseyNumber: "", franchise: "GT" },
-    { playerName: "Shivam Dube", role: "AR", price: "4 crore", country: "IN", jerseyNumber: "", franchise: "CSK" },
-    { playerName: "Hardik Pandya (Traded from GT)", role: "AR", price: "15 crore", country: "IN", jerseyNumber: "", franchise: "MI" },
-    { playerName: "Deepak Hooda", role: "BT", price: "5.75 crore", country: "IN", jerseyNumber: "", franchise: "LSG" },
-    { playerName: "Simarjeet Singh", role: "BW", price: "20 lakh", country: "", jerseyNumber: "", franchise: "CSK" },
-    { playerName: "Mukesh Choudhary", role: "BW", price: "20 lakh", country: "", jerseyNumber: "", franchise: "CSK" },
-    { playerName: "Anmolpreet Singh", role: "BT", price: "20 lakh", country: "", jerseyNumber: "", franchise: "SRH" },
-    { playerName: "Anuj Rawat", role: "WK", price: "3.4 crore", country: "IN", jerseyNumber: "", franchise: "RCB" },
-    { playerName: "Swapnil Singh", role: "AR", price: "20 lakh", country: "IN", jerseyNumber: "", franchise: "RCB" },
-    { playerName: "Sourav Chauhan", role: "AR", price: "20 lakh", country: "IN", jerseyNumber: "", franchise: "RCB" },
-    { playerName: "Rajan Kumar", role: "BW", price: "70 lakh", country: "IN", jerseyNumber: "", franchise: "RCB" },
-    { playerName: "Rahul Tripathi", role: "BT", price: "8.5 crore", country: "", jerseyNumber: "", franchise: "SRH" },
-    { playerName: "Nishant Sindhu", role: "AR", price: "60 lakh", country: "", jerseyNumber: "", franchise: "CSK" },
-    { playerName: "Yudhvir Singh", role: "BW", price: "20 lakh", country: "IN", jerseyNumber: "", franchise: "LSG" },
-    { playerName: "Kyle Mayers", role: "BW", price: "50 lakh", country: "WI", jerseyNumber: "", franchise: "LSG" },
-    { playerName: "Noor Ahmad", role: "BW", price: "30 lakh", country: "AF", jerseyNumber: "", franchise: "GT" },
-    { playerName: "Akash Deep", role: "BW", price: "20 lakh", country: "IN", jerseyNumber: "", franchise: "RCB" },
-    { playerName: "Abhinav Manohar", role: "BT", price: "2.6 crore", country: "IN", jerseyNumber: "", franchise: "GT" },
-    { playerName: "Gus Atkinson", role: "BW", price: "1 crore", country: "SH", jerseyNumber: "", franchise: "KKR" },
-    { playerName: "Sherfane Rutherford", role: "BT", price: "1.5 crore", country: "WI", jerseyNumber: "", franchise: "KKR" },
-    { playerName: "Rahmanullah Gurbaz", role: "WK", price: "50 lakh", country: "AF", jerseyNumber: "", franchise: "KKR" },
-    { playerName: "Akash Singh", role: "BW", price: "20 lakh", country: "", jerseyNumber: "", franchise: "SRH" },
-    { playerName: "Harry Brook", role: "BT", price: "4 crore", country: "SH", jerseyNumber: "", franchise: "DC" },
-    { playerName: "Abhishek Porel", role: "Wicketkeeper", price: "20 lakh", country: "IN", jerseyNumber: "", franchise: "DC" },
-    { playerName: "Maheesh Theekshana", role: "BW", price: "70 lakh", country: "", jerseyNumber: "", franchise: "CSK" },
-    { playerName: "Sushant Mishra", role: "BW", price: "2.2 crore", country: "IN", jerseyNumber: "", franchise: "GT" },
-    { playerName: "Anukul Roy", role: "Spinner", price: "20 lakh", country: "IN", jerseyNumber: "", franchise: "KKR" },
-    { playerName: "Prashant Solanki", role: "BW", price: "1.2 crore", country: "", jerseyNumber: "", franchise: "CSK" },
-    { playerName: "Rajvardhan Hangargekar", role: "BW", price: "1.5 crore", country: "", jerseyNumber: "", franchise: "CSK" },
-    { playerName: "Quinton de Kock", role: "BT", price: "6.75 crore", country: "SA", jerseyNumber: "", franchise: "LSG" },
-    { playerName: "Nitish Rana", role: "AR", price: "8 crore", country: "IN", jerseyNumber: "", franchise: "KKR" },
-    { playerName: "Shaik Rasheed", role: "AR", price: "20 lakh", country: "", jerseyNumber: "", franchise: "CSK" },
-    { playerName: "Gurkeerat Singh Mann", role: "BT", price: "20 lakh", country: "IN", jerseyNumber: "", franchise: "MI" },
-    { playerName: "Himanshu Sharma", role: "AR", price: "20 lakh", country: "IN", jerseyNumber: "", franchise: "RCB" },
-    { playerName: "Jaydev Unadkat", role: "BW", price: "1.6 crore", country: "", jerseyNumber: "", franchise: "SRH" },
-    { playerName: "Bhuvneshwar Kumar", role: "BW", price: "4.2 crore", country: "", jerseyNumber: "", franchise: "SRH" },
-    { playerName: "Mayank Markande", role: "BW", price: "50 lakh", country: "", jerseyNumber: "", franchise: "SRH" },
-    { playerName: "Azmatullah Omarzai", role: "AR", price: "50 lakh", country: "AF", jerseyNumber: "", franchise: "GT" },
-    { playerName: "Prithvi Shaw", role: "BT", price: "7.5 crore", country: "IN", jerseyNumber: "", franchise: "DC" },
-    { playerName: "Mohammed Arshad Khan", role: "BW", price: "20 lakh", country: "IN", jerseyNumber: "", franchise: "LSG" },
-    { playerName: "Shahrukh Khan", role: "AR", price: "7.4 crore", country: "IN", jerseyNumber: "", franchise: "GT" },
-    { playerName: "Mohit Sharma", role: "BW", price: "50 lakh", country: "IN", jerseyNumber: "", franchise: "GT" },
-    { playerName: "Tushar Deshpande", role: "BW", price: "20 lakh", country: "", jerseyNumber: "", franchise: "CSK" },
-    { playerName: "Ajay Mandal", role: "AR", price: "20 lakh", country: "", jerseyNumber: "", franchise: "CSK" },
-    { playerName: "Moeen Ali", role: "AR", price: "8 crore", country: "", jerseyNumber: "", franchise: "CSK" },
-    { playerName: "Ravi Bishnoi", role: "BW", price: "4 crore", country: "IN", jerseyNumber: "", franchise: "LSG" },
-    { playerName: "MS Dhoni", role: "WK", price: "12 crore", country: "IN", jerseyNumber: "07", franchise: "CSK" },
-    { playerName: "David Wiese", role: "AR", price: "50 lakh", country: "SA", jerseyNumber: "", franchise: "MI" },
-    { playerName: "Travis Head", role: "BT", price: "6.8 crore", country: "", jerseyNumber: "", franchise: "SRH" },
-    { playerName: "Glenn Phillips", role: "BT", price: "1.5 crore", country: "", jerseyNumber: "", franchise: "SRH" },
-    { playerName: "Suyash Sharma", role: "BW", price: "20 lakh", country: "IN", jerseyNumber: "", franchise: "KKR" },
-    { playerName: "Vishnu Vinod", role: "WK", price: "20 lakh", country: "IN", jerseyNumber: "", franchise: "MI" },
-    { playerName: "Devon Conway", role: "BT", price: "1 crore", country: "", jerseyNumber: "", franchise: "CSK" },
-    { playerName: "Kane Williamson", role: "BT", price: "2 crore", country: "New Zealand", jerseyNumber: "", franchise: "GT" },
-    { playerName: "Manoj Bhandage", role: "AR", price: "20 lakh", country: "IN", jerseyNumber: "", franchise: "RCB" },
-    { playerName: "Wriddiman Saha", role: "WK", price: "1.9 crore", country: "IN", jerseyNumber: "", franchise: "GT" },
-    { playerName: "Manish Pandey", role: "BT", price: "50 lakh", country: "IN", jerseyNumber: "", franchise: "KKR" },
-    { playerName: "Arshin Kulkarni", role: "AR", price: "20 lakh", country: "IN", jerseyNumber: "", franchise: "LSG" },
-    { playerName: "Ruturaj Gaikwad", role: "BT", price: "6 crore", country: "IN", jerseyNumber: "", franchise: "CSK" },
-    { playerName: "Arjun Tendulkar", role: "BW", price: "30 lakh", country: "IN", jerseyNumber: "", franchise: "MI" },
-    { playerName: "Rohit Sharma", role: "BT", price: "16 crore", country: "IN", jerseyNumber: "", franchise: "MI" },
-    { playerName: "Rohit Dahiya", role: "BW", price: "20 lakh", country: "IN", jerseyNumber: "", franchise: "MI" },
-    { playerName: "Shivam Mavi", role: "BW", price: "6.4 crore", country: "IN", jerseyNumber: "", franchise: "LSG" },
-    { playerName: "Prerak Mankad", role: "AR", price: "20 lakh", country: "IN", jerseyNumber: "", franchise: "LSG" },
-    { playerName: "Matheesha Pathirana", role: "BW", price: "20 lakh", country: "", jerseyNumber: "", franchise: "CSK" },
-    { playerName: "Angkrish Raghuvanshi", role: "BT", price: "20 lakh", country: "IN", jerseyNumber: "", franchise: "KKR" },
-    { playerName: "David Miller", role: "BT", price: "3 crore", country: "SA", jerseyNumber: "", franchise: "GT" },
-    { playerName: "Sai Sudharsan", role: "BT", price: "20 lakh", country: "IN", jerseyNumber: "", franchise: "GT" },
-    { playerName: "Sakib Hussain", role: "AR", price: "20 lakh", country: "IN", jerseyNumber: "", franchise: "KKR" },
-    { playerName: "Tilak Varma", role: "BT", price: "1.7 crore", country: "IN", jerseyNumber: "", franchise: "MI" },
-    { playerName: "Rasikh Dar", role: "BW", price: "20 lakh", country: "IN", jerseyNumber: "", franchise: "DC" },
-    { playerName: "Vijay Shankar", role: "AR", price: "1.4 crore", country: "IN", jerseyNumber: "", franchise: "GT" },
-    { playerName: "Harshit Rana", role: "BW", price: "20 lakh", country: "IN", jerseyNumber: "", franchise: "KKR" },
-    { playerName: "Marcus Stoinis", role: "AR", price: "11 crore", country: "AU", jerseyNumber: "", franchise: "LSG" },
-    { playerName: "Vaibhav Arora", role: "BW", price: "60 lakh", country: "IN", jerseyNumber: "", franchise: "KKR" },
-    { playerName: "Fazalhaq Farooqi", role: "BW", price: "50 lakh", country: "", jerseyNumber: "", franchise: "SRH" },
-    { playerName: "Glenn Maxwell", role: "AR", price: "11 crore", country: "AU", jerseyNumber: "", franchise: "RCB" },
-    { playerName: "Mark Wood", role: "BW", price: "7.5 crore", country: "SH", jerseyNumber: "", franchise: "LSG" },
-    { playerName: "Mukesh Kumar", role: "BW", price: "5.5 crore", country: "IN", jerseyNumber: "", franchise: "DC" },
-    { playerName: "Jason Behrendorff", role: "BW", price: "75 lakh", country: "AU", jerseyNumber: "", franchise: "MI" },
-    { playerName: "Prithvi Raj Yarra", role: "BW", price: "20 lakh", country: "IN", jerseyNumber: "", franchise: "MI" },
-    { playerName: "Shahbaz Ahmed (From RCB)", role: "AR", price: "2.4 crore", country: "", jerseyNumber: "", franchise: "SRH" },
-    { playerName: "Mohammed Shami", role: "BW", price: "6.25 crore", country: "IN", jerseyNumber: "", franchise: "GT" },
-    { playerName: "Upendra Yadav", role: "WK", price: "25 lakh", country: "", jerseyNumber: "", franchise: "SRH" },
-    { playerName: "Deepak Chahar", role: "AR", price: "14 crore", country: "", jerseyNumber: "", franchise: "CSK" },
-    { playerName: "Karn Sharma", role: "BW", price: "50 lakh", country: "IN", jerseyNumber: "", franchise: "RCB" },
-    { playerName: "Andre Russell", role: "AR", price: "12 crore", country: "WI", jerseyNumber: "", franchise: "KKR" },
-    { playerName: "Suryakumar Yadav", role: "BT", price: "8 crore", country: "IN", jerseyNumber: "", franchise: "MI" },
-    { playerName: "Ricky Bhui", role: "WK", price: "20 lakh", country: "IN", jerseyNumber: "", franchise: "DC" },
-    { playerName: "Lockie Ferguson", role: "BW", price: "2 crore", country: "New Zealand", jerseyNumber: "", franchise: "RCB" },
-    { playerName: "Mohammed Siraj", role: "BW", price: "7 crore", country: "IN", jerseyNumber: "", franchise: "RCB" },
-    { playerName: "Virat Kohli", role: "BT", price: "15 crore", country: "IN", jerseyNumber: "", franchise: "RCB" },
+    {
+        playerName: "MS Dhoni (c)",
+        role: "WK",
+        price: "12 crore",
+        nation: "India",
+        age: 42,
+        team: "Chennai"
+      },
+      {
+        playerName: "Ajinkya Rahane",
+        role: "WK",
+        price: "50 lakh",
+        nation: "India",
+        age: 35,
+        team: "Chennai"
+      },
+      {
+        playerName: "Ravindra Jadeja",
+        role: "AR",
+        price: "16 crore",
+        nation: "India",
+        age: 35,
+        team: "Chennai"
+      },
+      {
+        playerName: "Shardul Thakur",
+        role: "AR",
+        price: "4 crore",
+        nation: "India",
+        age: 32,
+        team: "Chennai"
+      },
+      {
+        playerName: "Rishabh Pant",
+        role: "WK",
+        price: "16 crore",
+        nation: "India",
+        age: 26,
+        team: "Delhi"
+      },
+      {
+        playerName: "Ishant Sharma",
+        role: "BW",
+        price: "50 lakh",
+        nation: "India",
+        age: 35,
+        team: "Delhi"
+      },
+      {
+        playerName: "Kuldeep Yadav",
+        role: "BW",
+        price: "2 crore",
+        nation: "India",
+        age: 29,
+        team: "Delhi"
+      },
+      {
+        playerName: "Axar Patel",
+        role: "AR",
+        price: "9 crore",
+        nation: "India",
+        age: 29,
+        team: "Delhi"
+      },
+      {
+        playerName: "Mohammed Shami",
+        role: "BW",
+        price: "6.25 crore",
+        nation: "India",
+        age: 33,
+        team: "Gujrat"
+      },
+      {
+        playerName: "Wriddiman Saha",
+        role: "WK",
+        price: "1.9 crore",
+        nation: "India",
+        age: 39,
+        team: "Gujrat"
+      },
+      {
+        playerName: "Shubman Gill",
+        role: "BT",
+        price: "7 crore",
+        nation: "India",
+        age: 24,
+        team: "Gujrat"
+      },
+      {
+        playerName: "Umesh Yadav",
+        role: "BW",
+        price: "5.8 crore",
+        nation: "India",
+        age: 36,
+        team: "Gujrat"
+      },
+      {
+        playerName: "Shreyas Iyer",
+        role: "BT",
+        price: "12.25 crore",
+        nation: "India",
+        age: 29,
+        team: "Kolkata"
+      },
+      {
+        playerName: "Rinku Singh",
+        role: "BT",
+        price: "55 lakh",
+        nation: "India",
+        age: 26,
+        team: "Kolkata"
+      },
+      {
+        playerName: "Venkatesh Iyer",
+        role: "AR",
+        price: "8 crore",
+        nation: "India",
+        age: 28,
+        team: "Kolkata"
+      },
+      {
+        playerName: "KS Bharat",
+        role: "WK",
+        price: "50 lakh",
+        nation: "India",
+        age: 30,
+        team: "Kolkata"
+      },
+      {
+        playerName: "KL Rahul",
+        role: "BT",
+        price: "15 crore",
+        nation: "India",
+        age: 31,
+        team: "Lucknow"
+      },
+      {
+        playerName: "Deepak Hooda",
+        role: "BT",
+        price: "5.75 crore",
+        nation: "India",
+        age: 28,
+        team: "Lucknow"
+      },
+      {
+        playerName: "Ravi Bishnoi",
+        role: "BW",
+        price: "4 crore",
+        nation: "India",
+        age: 23,
+        team: "Lucknow"
+      },
+      {
+        playerName: "Rohit Sharma",
+        role: "BT",
+        price: "16 crore",
+        nation: "India",
+        age: 36,
+        team: "Mumbai"
+      },
+      {
+        playerName: "Jasprit Bumrah",
+        role: "BW",
+        price: "12 crore",
+        nation: "India",
+        age: 30,
+        team: "Mumbai"
+      },
+      {
+        playerName: "Suryakumar Yadav",
+        role: "BT",
+        price: "8 crore",
+        nation: "India",
+        age: 33,
+        team: "Mumbai"
+      },
+      {
+        playerName: "Ishan Kishan",
+        role: "BT",
+        price: "15.25 crore",
+        nation: "India",
+        age: 25,
+        team: "Mumbai"
+      },
+      {
+        playerName: "Hardik Pandya",
+        role: "AR",
+        price: "15 crore",
+        nation: "India",
+        age: 30,
+        team: "Mumbai"
+      },
+      {
+        playerName: "Piyush Chawla",
+        role: "BW",
+        price: "50 lakh",
+        nation: "India",
+        age: 34,
+        team: "Mumbai"
+      },
+      {
+        playerName: "Shikhar Dhawan (C)",
+        role: "BT",
+        price: "8.25 crore",
+        nation: "India",
+        age: 38,
+        team: "Punjab"
+      },
+      {
+        playerName: "Rahul Chahar",
+        role: "BW",
+        price: "5.25 crore",
+        nation: "India",
+        age: 24,
+        team: "Punjab"
+      },
+      {
+        playerName: "Arshdeep Singh",
+        role: "BW",
+        price: "4 crore",
+        nation: "India",
+        age: 24,
+        team: "Punjab"
+      },
+      {
+        playerName: "Harshal Patel",
+        role: "AR",
+        price: "11.75 crore",
+        nation: "India",
+        age: 33,
+        team: "Punjab"
+      },
+      {
+        playerName: "Sanju Samson",
+        role: "BT",
+        price: "14 crore",
+        nation: "India",
+        age: 29,
+        team: "Rajasthan"
+      },
+      {
+        playerName: "Yashasvi Jaiswal",
+        role: "BT",
+        price: "4 crore",
+        nation: "India",
+        age: 21,
+        team: "Rajasthan"
+      },
+      {
+        playerName: "Yuzvendra Chahal",
+        role: "BW",
+        price: "6.5 crore",
+        nation: "India",
+        age: 33,
+        team: "Rajasthan"
+      },
+      {
+        playerName: "Ravichandran Ashwin",
+        role: "AR",
+        price: "5 crore",
+        nation: "India",
+        age: 37,
+        team: "Rajasthan"
+      },
+      {
+        playerName: "Prasidh Krishna",
+        role: "BW",
+        price: "10 crore",
+        nation: "India",
+        age: 27,
+        team: "Rajasthan"
+      },
+      {
+        playerName: "Avesh Khan",
+        role: "BW",
+        price: "10 cr",
+        nation: "India",
+        age: 27,
+        team: "Rajasthan"
+      },
+      {
+        playerName: "Virat Kohli",
+        role: "BT",
+        price: "15 crore",
+        nation: "India",
+        age: 35,
+        team: "Bangalore"
+      },
+      {
+        playerName: "Mohammed Siraj",
+        role: "BW",
+        price: "7 crore",
+        nation: "India",
+        age: 29,
+        team: "Bangalore"
+      },
+      {
+        playerName: "Dinesh Karthik",
+        role: "Keeper-BT",
+        price: "5.5 crore",
+        nation: "India",
+        age: 38,
+        team: "Bangalore"
+      },
+      {
+        playerName: "Mayank Agarwal",
+        role: "BT",
+        price: "8.25 crore",
+        nation: "India",
+        age: 32,
+        team: "Hyderabad"
+      },
+      {
+        playerName: "Washington Sundar",
+        role: "AR",
+        price: "8.75 crore",
+        nation: "India",
+        age: 24,
+        team: "Hyderabad"
+      },
+      {
+        playerName: "Bhuvneshwar Kumar",
+        role: "BW",
+        price: "4.2 crore",
+        nation: "India",
+        age: 33,
+        team: "Hyderabad"
+      },
+      {
+        playerName: "T Natarajan",
+        role: "BW",
+        price: "4 crore",
+        nation: "India",
+        age: 32,
+        team: "Hyderabad"
+      },
+      {
+        playerName: "Devon Conway",
+        role: "BT",
+        price: "1 crore",
+        nation: "New Zealand",
+        age: 32,
+        team: "Chennai"
+      },
+      {
+        playerName: "Mitchell Santner",
+        role: "AR",
+        price: "1.9 crore",
+        nation: "New Zealand",
+        age: 31,
+        team: "Chennai"
+      },
+      {
+        playerName: "Moeen Ali",
+        role: "AR",
+        price: "8 crore",
+        nation: "England",
+        age: 36,
+        team: "Chennai"
+      },
+      {
+        playerName: "Maheesh Theekshana",
+        role: "BW",
+        price: "70 lakh",
+        nation: "Sri Lanka",
+        age: 23,
+        team: "Chennai"
+      },
+      {
+        playerName: "Matheesha Pathirana",
+        role: "BW",
+        price: "20 lakh",
+        nation: "Sri Lanka",
+        age: 21,
+        team: "Chennai"
+      },
+      {
+        playerName: "Rachin Ravindra",
+        role: "AR",
+        price: "1.8 crore",
+        nation: "New Zealand",
+        age: 24,
+        team: "Chennai"
+      },
+      {
+        playerName: "Daryl Mitchell",
+        role: "AR",
+        price: "14 crore",
+        nation: "New Zealand",
+        age: 32,
+        team: "Chennai"
+      },
+      {
+        playerName: "Mustafizur Rahman",
+        role: "BW",
+        price: "2 crore",
+        nation: "Bangladesh",
+        age: 28,
+        team: "Chennai"
+      },
+      {
+        playerName: "David Warner",
+        role: "BT",
+        price: "6.25 crore",
+        nation: "Australia",
+        age: 37,
+        team: "Delhi"
+      },
+      {
+        playerName: "Mitchell Marsh",
+        role: "AR",
+        price: "6.5 crore",
+        nation: "Australia",
+        age: 32,
+        team: "Delhi"
+      },
+      {
+        playerName: "Anrich Nortje",
+        role: "BW",
+        price: "6.5 crore",
+        nation: "South Africa",
+        age: 30,
+        team: "Delhi"
+      },
+      {
+        playerName: "Lungi Ngidi",
+        role: "BW",
+        price: "50 lakh",
+        nation: "South Africa",
+        age: 27,
+        team: "Delhi"
+      },
+      {
+        playerName: "Harry Brook",
+        role: "BT",
+        price: "4 crore",
+        nation: "England",
+        age: 24,
+        team: "Delhi"
+      },
+      {
+        playerName: "Tristan Stubbs",
+        role: "WK",
+        price: "50 lakh",
+        nation: "Australia",
+        age: 23,
+        team: "Delhi"
+      },
+      {
+        playerName: "Jhye Richardson",
+        role: "BW",
+        price: "5 crore",
+        nation: "Australia",
+        age: 27,
+        team: "Delhi"
+      },
+      {
+        playerName: "Shai Hope",
+        role: "WK",
+        price: "75 lakh",
+        nation: "West Indies",
+        age: 30,
+        team: "Delhi"
+      },
+      {
+        playerName: "Rashid Khan",
+        role: "BW",
+        price: "15 crore",
+        nation: "Afghanistan",
+        age: 25,
+        team: "Gujrat"
+      },
+      {
+        playerName: "Kane Williamson",
+        role: "BT",
+        price: "2 crore",
+        nation: "New Zealand",
+        age: 33,
+        team: "Gujrat"
+      },
+      {
+        playerName: "Noor Ahmad",
+        role: "BW",
+        price: "30 lakh",
+        nation: "Afghanistan",
+        age: 18,
+        team: "Gujrat"
+      },
+      {
+        playerName: "David Miller",
+        role: "BT",
+        price: "3 crore",
+        nation: "South Africa",
+        age: 34,
+        team: "Gujrat"
+      },
+      {
+        playerName: "Joshua Little",
+        role: "BW",
+        price: "4.4 crore",
+        nation: "Ireland",
+        age: 24,
+        team: "Gujrat"
+      },
+      {
+        playerName: "Azmatullah Omarzai",
+        role: "AR",
+        price: "50 lakh",
+        nation: "Afghanistan",
+        age: 23,
+        team: "Gujrat"
+      },
+      {
+        playerName: "Spencer Johnson",
+        role: "BW",
+        price: "10 crore",
+        nation: "Australia",
+        age: 28,
+        team: "Gujrat"
+      },
+      {
+        playerName: "Sunil Narine",
+        role: "AR",
+        price: "6 crore",
+        nation: "West Indies",
+        age: 35,
+        team: "Kolkata"
+      },
+      {
+        playerName: "Andre Russell",
+        role: "AR",
+        price: "12 crore",
+        nation: "West Indies",
+        age: 35,
+        team: "Kolkata"
+      },
+      {
+        playerName: "Jason Roy",
+        role: "BT",
+        price: "2.8 crore",
+        nation: "England",
+        age: 33,
+        team: "Kolkata"
+      },
+      {
+        playerName: "Rahmanullah Gurbaz",
+        role: "WK",
+        price: "50 lakh",
+        nation: "Afghanistan",
+        age: 22,
+        team: "Kolkata"
+      },
+      {
+        playerName: "Mitchell Starc",
+        role: "BW",
+        price: "24.75 crore",
+        nation: "Australia",
+        age: 33,
+        team: "Kolkata"
+      },
+      {
+        playerName: "Sherfane Rutherford",
+        role: "BT",
+        price: "1.5 crore",
+        nation: "West Indies",
+        age: 25,
+        team: "Kolkata"
+      },
+      {
+        playerName: "Mujeeb Ur Rahman",
+        role: "BT",
+        price: "2 crore",
+        nation: "Afghanistan",
+        age: 22,
+        team: "Kolkata"
+      },
+      {
+        playerName: "Gus Atkinson",
+        role: "BW",
+        price: "1 crore",
+        nation: "England",
+        age: 25,
+        team: "Kolkata"
+      },
+      {
+        playerName: "Quinton de Kock",
+        role: "BT",
+        price: "6.75 crore",
+        nation: "South Africa",
+        age: 31,
+        team: "Lucknow"
+      },
+      {
+        playerName: "Nicholas Pooran",
+        role: "BT",
+        price: "16 crore",
+        nation: "West Indies",
+        age: 28,
+        team: "Lucknow"
+      },
+      {
+        playerName: "Kyle Mayers",
+        role: "BW",
+        price: "50 lakh",
+        nation: "West Indies",
+        age: 31,
+        team: "Lucknow"
+      },
+      {
+        playerName: "Marcus Stoinis",
+        role: "AR",
+        price: "11 crore",
+        nation: "Australia",
+        age: 34,
+        team: "Lucknow"
+      },
+      {
+        playerName: "Naveen-ul-Haq",
+        role: "BW",
+        price: "50 lakh",
+        nation: "Afghanistan",
+        age: 24,
+        team: "Lucknow"
+      },
+      {
+        playerName: "Mark Wood",
+        role: "BW",
+        price: "7.5 crore",
+        nation: "England",
+        age: 33,
+        team: "Lucknow"
+      },
+      {
+        playerName: "Ashton Turner",
+        role: "BT",
+        price: "1 crore",
+        nation: "Australia",
+        age: 30,
+        team: "Lucknow"
+      },
+      {
+        playerName: "David Willey",
+        role: "AR",
+        price: "2 crore",
+        nation: "England",
+        age: 33,
+        team: "Lucknow"
+      },
+      {
+        playerName: "Shamar Joseph",
+        role: "BW",
+        price: "3 crore",
+        nation: "West indies",
+        age: 24,
+        team: "Lucknow"
+      },
+      {
+        playerName: "Dewald Brevis",
+        role: "BT",
+        price: "3 crore",
+        nation: "South Africa",
+        age: 20,
+        team: "Mumbai"
+      },
+      {
+        playerName: "Tim David",
+        role: "AR",
+        price: "8.25 crore",
+        nation: "Australia",
+        age: 27,
+        team: "Mumbai"
+      },
+      {
+        playerName: "Jason Behrendorff",
+        role: "BW",
+        price: "75 lakh",
+        nation: "Australia",
+        age: 33,
+        team: "Mumbai"
+      },
+      {
+        playerName: "Romario Shepherd",
+        role: "AR",
+        price: "50 lakh",
+        nation: "West Indies",
+        age: 29,
+        team: "Mumbai"
+      },
+      {
+        playerName: "Gerald Coetzee",
+        role: "AR",
+        price: "5 crore",
+        nation: "South Africa",
+        age: 23,
+        team: "Mumbai"
+      },
+      {
+        playerName: "Dilshan Madushanka",
+        role: "BW",
+        price: "4.6 crore",
+        nation: "Sri Lanka",
+        age: 23,
+        team: "Mumbai"
+      },
+      {
+        playerName: "Nuwan Thushara",
+        role: "BW",
+        price: "4.8 crore",
+        nation: "Sri Lanka",
+        age: 29,
+        team: "Mumbai"
+      },
+      {
+        playerName: "Mohammad Nabi",
+        role: "AR",
+        price: "1.5 crore",
+        nation: "Afghanistan",
+        age: 38,
+        team: "Mumbai"
+      },
+      {
+        playerName: "Jonny Bairstow",
+        role: "WK",
+        price: "6.75 crore",
+        nation: "England",
+        age: 34,
+        team: "Punjab"
+      },
+      {
+        playerName: "Matthew Short",
+        role: "BT",
+        price: "20 lakh",
+        nation: "Australia",
+        age: 28,
+        team: "Punjab"
+      },
+      {
+        playerName: "Sam Curran",
+        role: "AR",
+        price: "18.5 crore",
+        nation: "England",
+        age: 25,
+        team: "Punjab"
+      },
+      {
+        playerName: "Sikandar Raza",
+        role: "AR",
+        price: "50 lakh",
+        nation: "Zimbabwe",
+        age: 37,
+        team: "Punjab"
+      },
+      {
+        playerName: "Liam Livingstone",
+        role: "BT",
+        price: "11.5 crore",
+        nation: "England",
+        age: 30,
+        team: "Punjab"
+      },
+      {
+        playerName: "Nathan Ellis",
+        role: "BW",
+        price: "75 lakh",
+        nation: "Australia",
+        age: 29,
+        team: "Punjab"
+      },
+      {
+        playerName: "Chris Woakes",
+        role: "AR",
+        price: "4.2 crore",
+        nation: "England",
+        age: 34,
+        team: "Punjab"
+      },
+      {
+        playerName: "Rilee Rossouw",
+        role: "BT",
+        price: "8 crore",
+        nation: "South Africa",
+        age: 34,
+        team: "Punjab"
+      },
+      {
+        playerName: "Jos Buttler",
+        role: "BT",
+        price: "10 crore",
+        nation: "England",
+        age: 33,
+        team: "Rajasthan"
+      },
+      {
+        playerName: "Trent Boult",
+        role: "BW",
+        price: "8 crore",
+        nation: "New Zealand",
+        age: 34,
+        team: "Rajasthan"
+      },
+      {
+        playerName: "Shimron Hetmyer",
+        role: "BT",
+        price: "8.5 crore",
+        nation: "West Indies",
+        age: 26,
+        team: "Rajasthan"
+      },
+      {
+        playerName: "Donovan Ferreira",
+        role: "AR",
+        price: "50 lakh",
+        nation: "South Africa",
+        age: 25,
+        team: "Rajasthan"
+      },
+      {
+        playerName: "Adam Zampa",
+        role: "BW",
+        price: "1.5 crore",
+        nation: "Australia",
+        age: 31,
+        team: "Rajasthan"
+      },
+      {
+        playerName: "Rovman Powell",
+        role: "BT",
+        price: "7.4 crore",
+        nation: "West Indies",
+        age: 30,
+        team: "Rajasthan"
+      },
+      {
+        playerName: "Tom Kohler-Cadmore",
+        role: "WK",
+        price: "40 lakh",
+        nation: "England",
+        age: 29,
+        team: "Rajasthan"
+      },
+      {
+        playerName: "Nandre Burger",
+        role: "BW",
+        price: "50 lakh",
+        nation: "South Africa",
+        age: 28,
+        team: "Rajasthan"
+      },
+      {
+        playerName: "Faf du Plessis",
+        role: "BT",
+        price: "7 crore",
+        nation: "South Africa",
+        age: 39,
+        team: "Bangalore"
+      },
+      {
+        playerName: "Glenn Maxwell",
+        role: "AR",
+        price: "11 crore",
+        nation: "Australia",
+        age: 35,
+        team: "Bangalore"
+      },
+      {
+        playerName: "Reece Topley",
+        role: "BW",
+        price: "1.9 crore",
+        nation: "England",
+        age: 29,
+        team: "Bangalore"
+      },
+      {
+        playerName: "Will Jacks",
+        role: "AR",
+        price: "3.2 crore",
+        nation: "England",
+        age: 25,
+        team: "Bangalore"
+      },
+      {
+        playerName: "Cameron Green",
+        role: "AR",
+        price: "17.5 crore",
+        nation: "Australia",
+        age: 24,
+        team: "Bangalore"
+      },
+      {
+        playerName: "Alzarri Joseph",
+        role: "BW",
+        price: "11.5 crore",
+        nation: "West Indies",
+        age: 27,
+        team: "Bangalore"
+      },
+      {
+        playerName: "Tom Curran",
+        role: "AR",
+        price: "1.5 crore",
+        nation: "England",
+        age: 28,
+        team: "Bangalore"
+      },
+      {
+        playerName: "Lockie Ferguson",
+        role: "BW",
+        price: "2 crore",
+        nation: "New Zealand",
+        age: 32,
+        team: "Bangalore"
+      },
+      {
+        playerName: "Glenn Phillips",
+        role: "BT",
+        price: "1.5 crore",
+        nation: "New Zealand",
+        age: 27,
+        team: "Hyderabad"
+      },
+      {
+        playerName: "Heinrich Klaasen",
+        role: "BT",
+        price: "5.25 crore",
+        nation: "South Africa",
+        age: 32,
+        team: "Hyderabad"
+      },
+      {
+        playerName: "Marco Jansen",
+        role: "AR",
+        price: "4.2 crore",
+        nation: "South Africa",
+        age: 23,
+        team: "Hyderabad"
+      },
+      {
+        playerName: "Fazalhaq Farooqi",
+        role: "BW",
+        price: "50 lakh",
+        nation: "Afghanistan",
+        age: 23,
+        team: "Hyderabad"
+      },
+      {
+        playerName: "Travis Head",
+        role: "BT",
+        price: "6.8 crore",
+        nation: "Australia",
+        age: 29,
+        team: "Hyderabad"
+      },
+      {
+        playerName: "Wanindu Hasaranga",
+        role: "AR",
+        price: "1.5 crore",
+        nation: "Sri Lanka",
+        age: 26,
+        team: "Hyderabad"
+      },
+      {
+        playerName: "Pat Cummins",
+        role: "AR",
+        price: "20.5 crore",
+        nation: "Australia",
+        age: 30,
+        team: "Hyderabad"
+      }
 ]

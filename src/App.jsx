@@ -5,6 +5,7 @@
 import NavBar from './components/NavBar'
 import Play from './Pages/Play'
 import Home from './Pages/Home'
+import StatsPage from './Pages/StatsPage'
 
   function App() {
     const [data, setData] = useState(null);
@@ -33,6 +34,7 @@ import Home from './Pages/Home'
         <Routes>
           <Route path='/' element={<Home />}> </Route>
           <Route path='/play' element={<Play />}> </Route>
+          <Route path='/stats' element={<StatsPage />}> </Route>
         </Routes>
       </BrowserRouter>
     )
