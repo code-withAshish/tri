@@ -10,7 +10,7 @@ import StatsPage from './Pages/StatsPage'
   function App() {
     const [data, setData] = useState(null);
     const [stats, setStats] = useState(null);
-    const [count, setCount] = useState(0)
+    // const [count, setCount] = useState(0)
 
     useEffect(() => {
 

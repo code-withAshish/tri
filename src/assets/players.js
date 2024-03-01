@@ -2,7 +2,7 @@ export const PLAYERS = [
     {
         playerName: "MS Dhoni (c)",
         role: "WK",
-        price: "12 crore",
+        price: "12 Cr",
         nation: "India",
         age: 42,
         team: "Chennai"
@@ -10,7 +10,7 @@ export const PLAYERS = [
       {
         playerName: "Ajinkya Rahane",
         role: "WK",
-        price: "50 lakh",
+        price: "50 lac",
         nation: "India",
         age: 35,
         team: "Chennai"
@@ -18,7 +18,7 @@ export const PLAYERS = [
       {
         playerName: "Ravindra Jadeja",
         role: "AR",
-        price: "16 crore",
+        price: "16 Cr",
         nation: "India",
         age: 35,
         team: "Chennai"
@@ -26,7 +26,7 @@ export const PLAYERS = [
       {
         playerName: "Shardul Thakur",
         role: "AR",
-        price: "4 crore",
+        price: "4 Cr",
         nation: "India",
         age: 32,
         team: "Chennai"
@@ -34,7 +34,7 @@ export const PLAYERS = [
       {
         playerName: "Rishabh Pant",
         role: "WK",
-        price: "16 crore",
+        price: "16 Cr",
         nation: "India",
         age: 26,
         team: "Delhi"
@@ -42,7 +42,7 @@ export const PLAYERS = [
       {
         playerName: "Ishant Sharma",
         role: "BW",
-        price: "50 lakh",
+        price: "50 lac",
         nation: "India",
         age: 35,
         team: "Delhi"
@@ -50,7 +50,7 @@ export const PLAYERS = [
       {
         playerName: "Kuldeep Yadav",
         role: "BW",
-        price: "2 crore",
+        price: "2 Cr",
         nation: "India",
         age: 29,
         team: "Delhi"
@@ -58,7 +58,7 @@ export const PLAYERS = [
       {
         playerName: "Axar Patel",
         role: "AR",
-        price: "9 crore",
+        price: "9 Cr",
         nation: "India",
         age: 29,
         team: "Delhi"
@@ -66,7 +66,7 @@ export const PLAYERS = [
       {
         playerName: "Mohammed Shami",
         role: "BW",
-        price: "6.25 crore",
+        price: "6.25 Cr",
         nation: "India",
         age: 33,
         team: "Gujrat"
@@ -74,7 +74,7 @@ export const PLAYERS = [
       {
         playerName: "Wriddiman Saha",
         role: "WK",
-        price: "1.9 crore",
+        price: "1.9 Cr",
         nation: "India",
         age: 39,
         team: "Gujrat"
@@ -82,7 +82,7 @@ export const PLAYERS = [
       {
         playerName: "Shubman Gill",
         role: "BT",
-        price: "7 crore",
+        price: "7 Cr",
         nation: "India",
         age: 24,
         team: "Gujrat"
@@ -90,7 +90,7 @@ export const PLAYERS = [
       {
         playerName: "Umesh Yadav",
         role: "BW",
-        price: "5.8 crore",
+        price: "5.8 Cr",
         nation: "India",
         age: 36,
         team: "Gujrat"
@@ -98,7 +98,7 @@ export const PLAYERS = [
       {
         playerName: "Shreyas Iyer",
         role: "BT",
-        price: "12.25 crore",
+        price: "12.25 Cr",
         nation: "India",
         age: 29,
         team: "Kolkata"
@@ -106,7 +106,7 @@ export const PLAYERS = [
       {
         playerName: "Rinku Singh",
         role: "BT",
-        price: "55 lakh",
+        price: "55 lac",
         nation: "India",
         age: 26,
         team: "Kolkata"
@@ -114,7 +114,7 @@ export const PLAYERS = [
       {
         playerName: "Venkatesh Iyer",
         role: "AR",
-        price: "8 crore",
+        price: "8 Cr",
         nation: "India",
         age: 28,
         team: "Kolkata"
@@ -122,7 +122,7 @@ export const PLAYERS = [
       {
         playerName: "KS Bharat",
         role: "WK",
-        price: "50 lakh",
+        price: "50 lac",
         nation: "India",
         age: 30,
         team: "Kolkata"
@@ -130,7 +130,7 @@ export const PLAYERS = [
       {
         playerName: "KL Rahul",
         role: "BT",
-        price: "15 crore",
+        price: "15 Cr",
         nation: "India",
         age: 31,
         team: "Lucknow"
@@ -138,7 +138,7 @@ export const PLAYERS = [
       {
         playerName: "Deepak Hooda",
         role: "BT",
-        price: "5.75 crore",
+        price: "5.75 Cr",
         nation: "India",
         age: 28,
         team: "Lucknow"
@@ -146,7 +146,7 @@ export const PLAYERS = [
       {
         playerName: "Ravi Bishnoi",
         role: "BW",
-        price: "4 crore",
+        price: "4 Cr",
         nation: "India",
         age: 23,
         team: "Lucknow"
@@ -154,7 +154,7 @@ export const PLAYERS = [
       {
         playerName: "Rohit Sharma",
         role: "BT",
-        price: "16 crore",
+        price: "16 Cr",
         nation: "India",
         age: 36,
         team: "Mumbai"
@@ -162,7 +162,7 @@ export const PLAYERS = [
       {
         playerName: "Jasprit Bumrah",
         role: "BW",
-        price: "12 crore",
+        price: "12 Cr",
         nation: "India",
         age: 30,
         team: "Mumbai"
@@ -170,7 +170,7 @@ export const PLAYERS = [
       {
         playerName: "Suryakumar Yadav",
         role: "BT",
-        price: "8 crore",
+        price: "8 Cr",
         nation: "India",
         age: 33,
         team: "Mumbai"
@@ -178,7 +178,7 @@ export const PLAYERS = [
       {
         playerName: "Ishan Kishan",
         role: "BT",
-        price: "15.25 crore",
+        price: "15.25 Cr",
         nation: "India",
         age: 25,
         team: "Mumbai"
@@ -186,7 +186,7 @@ export const PLAYERS = [
       {
         playerName: "Hardik Pandya",
         role: "AR",
-        price: "15 crore",
+        price: "15 Cr",
         nation: "India",
         age: 30,
         team: "Mumbai"
@@ -194,7 +194,7 @@ export const PLAYERS = [
       {
         playerName: "Piyush Chawla",
         role: "BW",
-        price: "50 lakh",
+        price: "50 lac",
         nation: "India",
         age: 34,
         team: "Mumbai"
@@ -202,7 +202,7 @@ export const PLAYERS = [
       {
         playerName: "Shikhar Dhawan (C)",
         role: "BT",
-        price: "8.25 crore",
+        price: "8.25 Cr",
         nation: "India",
         age: 38,
         team: "Punjab"
@@ -210,7 +210,7 @@ export const PLAYERS = [
       {
         playerName: "Rahul Chahar",
         role: "BW",
-        price: "5.25 crore",
+        price: "5.25 Cr",
         nation: "India",
         age: 24,
         team: "Punjab"
@@ -218,7 +218,7 @@ export const PLAYERS = [
       {
         playerName: "Arshdeep Singh",
         role: "BW",
-        price: "4 crore",
+        price: "4 Cr",
         nation: "India",
         age: 24,
         team: "Punjab"
@@ -226,7 +226,7 @@ export const PLAYERS = [
       {
         playerName: "Harshal Patel",
         role: "AR",
-        price: "11.75 crore",
+        price: "11.75 Cr",
         nation: "India",
         age: 33,
         team: "Punjab"
@@ -234,7 +234,7 @@ export const PLAYERS = [
       {
         playerName: "Sanju Samson",
         role: "BT",
-        price: "14 crore",
+        price: "14 Cr",
         nation: "India",
         age: 29,
         team: "Rajasthan"
@@ -242,7 +242,7 @@ export const PLAYERS = [
       {
         playerName: "Yashasvi Jaiswal",
         role: "BT",
-        price: "4 crore",
+        price: "4 Cr",
         nation: "India",
         age: 21,
         team: "Rajasthan"
@@ -250,7 +250,7 @@ export const PLAYERS = [
       {
         playerName: "Yuzvendra Chahal",
         role: "BW",
-        price: "6.5 crore",
+        price: "6.5 Cr",
         nation: "India",
         age: 33,
         team: "Rajasthan"
@@ -258,7 +258,7 @@ export const PLAYERS = [
       {
         playerName: "Ravichandran Ashwin",
         role: "AR",
-        price: "5 crore",
+        price: "5 Cr",
         nation: "India",
         age: 37,
         team: "Rajasthan"
@@ -266,7 +266,7 @@ export const PLAYERS = [
       {
         playerName: "Prasidh Krishna",
         role: "BW",
-        price: "10 crore",
+        price: "10 Cr",
         nation: "India",
         age: 27,
         team: "Rajasthan"
@@ -282,7 +282,7 @@ export const PLAYERS = [
       {
         playerName: "Virat Kohli",
         role: "BT",
-        price: "15 crore",
+        price: "15 Cr",
         nation: "India",
         age: 35,
         team: "Bangalore"
@@ -290,7 +290,7 @@ export const PLAYERS = [
       {
         playerName: "Mohammed Siraj",
         role: "BW",
-        price: "7 crore",
+        price: "7 Cr",
         nation: "India",
         age: 29,
         team: "Bangalore"
@@ -298,7 +298,7 @@ export const PLAYERS = [
       {
         playerName: "Dinesh Karthik",
         role: "Keeper-BT",
-        price: "5.5 crore",
+        price: "5.5 Cr",
         nation: "India",
         age: 38,
         team: "Bangalore"
@@ -306,7 +306,7 @@ export const PLAYERS = [
       {
         playerName: "Mayank Agarwal",
         role: "BT",
-        price: "8.25 crore",
+        price: "8.25 Cr",
         nation: "India",
         age: 32,
         team: "Hyderabad"
@@ -314,7 +314,7 @@ export const PLAYERS = [
       {
         playerName: "Washington Sundar",
         role: "AR",
-        price: "8.75 crore",
+        price: "8.75 Cr",
         nation: "India",
         age: 24,
         team: "Hyderabad"
@@ -322,7 +322,7 @@ export const PLAYERS = [
       {
         playerName: "Bhuvneshwar Kumar",
         role: "BW",
-        price: "4.2 crore",
+        price: "4.2 Cr",
         nation: "India",
         age: 33,
         team: "Hyderabad"
@@ -330,7 +330,7 @@ export const PLAYERS = [
       {
         playerName: "T Natarajan",
         role: "BW",
-        price: "4 crore",
+        price: "4 Cr",
         nation: "India",
         age: 32,
         team: "Hyderabad"
@@ -338,7 +338,7 @@ export const PLAYERS = [
       {
         playerName: "Devon Conway",
         role: "BT",
-        price: "1 crore",
+        price: "1 Cr",
         nation: "New Zealand",
         age: 32,
         team: "Chennai"
@@ -346,7 +346,7 @@ export const PLAYERS = [
       {
         playerName: "Mitchell Santner",
         role: "AR",
-        price: "1.9 crore",
+        price: "1.9 Cr",
         nation: "New Zealand",
         age: 31,
         team: "Chennai"
@@ -354,7 +354,7 @@ export const PLAYERS = [
       {
         playerName: "Moeen Ali",
         role: "AR",
-        price: "8 crore",
+        price: "8 Cr",
         nation: "England",
         age: 36,
         team: "Chennai"
@@ -362,7 +362,7 @@ export const PLAYERS = [
       {
         playerName: "Maheesh Theekshana",
         role: "BW",
-        price: "70 lakh",
+        price: "70 lac",
         nation: "Sri Lanka",
         age: 23,
         team: "Chennai"
@@ -370,7 +370,7 @@ export const PLAYERS = [
       {
         playerName: "Matheesha Pathirana",
         role: "BW",
-        price: "20 lakh",
+        price: "20 lac",
         nation: "Sri Lanka",
         age: 21,
         team: "Chennai"
@@ -378,7 +378,7 @@ export const PLAYERS = [
       {
         playerName: "Rachin Ravindra",
         role: "AR",
-        price: "1.8 crore",
+        price: "1.8 Cr",
         nation: "New Zealand",
         age: 24,
         team: "Chennai"
@@ -386,7 +386,7 @@ export const PLAYERS = [
       {
         playerName: "Daryl Mitchell",
         role: "AR",
-        price: "14 crore",
+        price: "14 Cr",
         nation: "New Zealand",
         age: 32,
         team: "Chennai"
@@ -394,7 +394,7 @@ export const PLAYERS = [
       {
         playerName: "Mustafizur Rahman",
         role: "BW",
-        price: "2 crore",
+        price: "2 Cr",
         nation: "Bangladesh",
         age: 28,
         team: "Chennai"
@@ -402,7 +402,7 @@ export const PLAYERS = [
       {
         playerName: "David Warner",
         role: "BT",
-        price: "6.25 crore",
+        price: "6.25 Cr",
         nation: "Australia",
         age: 37,
         team: "Delhi"
@@ -410,7 +410,7 @@ export const PLAYERS = [
       {
         playerName: "Mitchell Marsh",
         role: "AR",
-        price: "6.5 crore",
+        price: "6.5 Cr",
         nation: "Australia",
         age: 32,
         team: "Delhi"
@@ -418,7 +418,7 @@ export const PLAYERS = [
       {
         playerName: "Anrich Nortje",
         role: "BW",
-        price: "6.5 crore",
+        price: "6.5 Cr",
         nation: "South Africa",
         age: 30,
         team: "Delhi"
@@ -426,7 +426,7 @@ export const PLAYERS = [
       {
         playerName: "Lungi Ngidi",
         role: "BW",
-        price: "50 lakh",
+        price: "50 lac",
         nation: "South Africa",
         age: 27,
         team: "Delhi"
@@ -434,7 +434,7 @@ export const PLAYERS = [
       {
         playerName: "Harry Brook",
         role: "BT",
-        price: "4 crore",
+        price: "4 Cr",
         nation: "England",
         age: 24,
         team: "Delhi"
@@ -442,7 +442,7 @@ export const PLAYERS = [
       {
         playerName: "Tristan Stubbs",
         role: "WK",
-        price: "50 lakh",
+        price: "50 lac",
         nation: "Australia",
         age: 23,
         team: "Delhi"
@@ -450,7 +450,7 @@ export const PLAYERS = [
       {
         playerName: "Jhye Richardson",
         role: "BW",
-        price: "5 crore",
+        price: "5 Cr",
         nation: "Australia",
         age: 27,
         team: "Delhi"
@@ -458,7 +458,7 @@ export const PLAYERS = [
       {
         playerName: "Shai Hope",
         role: "WK",
-        price: "75 lakh",
+        price: "75 lac",
         nation: "West Indies",
         age: 30,
         team: "Delhi"
@@ -466,7 +466,7 @@ export const PLAYERS = [
       {
         playerName: "Rashid Khan",
         role: "BW",
-        price: "15 crore",
+        price: "15 Cr",
         nation: "Afghanistan",
         age: 25,
         team: "Gujrat"
@@ -474,7 +474,7 @@ export const PLAYERS = [
       {
         playerName: "Kane Williamson",
         role: "BT",
-        price: "2 crore",
+        price: "2 Cr",
         nation: "New Zealand",
         age: 33,
         team: "Gujrat"
@@ -482,7 +482,7 @@ export const PLAYERS = [
       {
         playerName: "Noor Ahmad",
         role: "BW",
-        price: "30 lakh",
+        price: "30 lac",
         nation: "Afghanistan",
         age: 18,
         team: "Gujrat"
@@ -490,7 +490,7 @@ export const PLAYERS = [
       {
         playerName: "David Miller",
         role: "BT",
-        price: "3 crore",
+        price: "3 Cr",
         nation: "South Africa",
         age: 34,
         team: "Gujrat"
@@ -498,7 +498,7 @@ export const PLAYERS = [
       {
         playerName: "Joshua Little",
         role: "BW",
-        price: "4.4 crore",
+        price: "4.4 Cr",
         nation: "Ireland",
         age: 24,
         team: "Gujrat"
@@ -506,7 +506,7 @@ export const PLAYERS = [
       {
         playerName: "Azmatullah Omarzai",
         role: "AR",
-        price: "50 lakh",
+        price: "50 lac",
         nation: "Afghanistan",
         age: 23,
         team: "Gujrat"
@@ -514,7 +514,7 @@ export const PLAYERS = [
       {
         playerName: "Spencer Johnson",
         role: "BW",
-        price: "10 crore",
+        price: "10 Cr",
         nation: "Australia",
         age: 28,
         team: "Gujrat"
@@ -522,7 +522,7 @@ export const PLAYERS = [
       {
         playerName: "Sunil Narine",
         role: "AR",
-        price: "6 crore",
+        price: "6 Cr",
         nation: "West Indies",
         age: 35,
         team: "Kolkata"
@@ -530,7 +530,7 @@ export const PLAYERS = [
       {
         playerName: "Andre Russell",
         role: "AR",
-        price: "12 crore",
+        price: "12 Cr",
         nation: "West Indies",
         age: 35,
         team: "Kolkata"
@@ -538,7 +538,7 @@ export const PLAYERS = [
       {
         playerName: "Jason Roy",
         role: "BT",
-        price: "2.8 crore",
+        price: "2.8 Cr",
         nation: "England",
         age: 33,
         team: "Kolkata"
@@ -546,7 +546,7 @@ export const PLAYERS = [
       {
         playerName: "Rahmanullah Gurbaz",
         role: "WK",
-        price: "50 lakh",
+        price: "50 lac",
         nation: "Afghanistan",
         age: 22,
         team: "Kolkata"
@@ -554,7 +554,7 @@ export const PLAYERS = [
       {
         playerName: "Mitchell Starc",
         role: "BW",
-        price: "24.75 crore",
+        price: "24.75 Cr",
         nation: "Australia",
         age: 33,
         team: "Kolkata"
@@ -562,7 +562,7 @@ export const PLAYERS = [
       {
         playerName: "Sherfane Rutherford",
         role: "BT",
-        price: "1.5 crore",
+        price: "1.5 Cr",
         nation: "West Indies",
         age: 25,
         team: "Kolkata"
@@ -570,7 +570,7 @@ export const PLAYERS = [
       {
         playerName: "Mujeeb Ur Rahman",
         role: "BT",
-        price: "2 crore",
+        price: "2 Cr",
         nation: "Afghanistan",
         age: 22,
         team: "Kolkata"
@@ -578,7 +578,7 @@ export const PLAYERS = [
       {
         playerName: "Gus Atkinson",
         role: "BW",
-        price: "1 crore",
+        price: "1 Cr",
         nation: "England",
         age: 25,
         team: "Kolkata"
@@ -586,7 +586,7 @@ export const PLAYERS = [
       {
         playerName: "Quinton de Kock",
         role: "BT",
-        price: "6.75 crore",
+        price: "6.75 Cr",
         nation: "South Africa",
         age: 31,
         team: "Lucknow"
@@ -594,7 +594,7 @@ export const PLAYERS = [
       {
         playerName: "Nicholas Pooran",
         role: "BT",
-        price: "16 crore",
+        price: "16 Cr",
         nation: "West Indies",
         age: 28,
         team: "Lucknow"
@@ -602,7 +602,7 @@ export const PLAYERS = [
       {
         playerName: "Kyle Mayers",
         role: "BW",
-        price: "50 lakh",
+        price: "50 lac",
         nation: "West Indies",
         age: 31,
         team: "Lucknow"
@@ -610,7 +610,7 @@ export const PLAYERS = [
       {
         playerName: "Marcus Stoinis",
         role: "AR",
-        price: "11 crore",
+        price: "11 Cr",
         nation: "Australia",
         age: 34,
         team: "Lucknow"
@@ -618,7 +618,7 @@ export const PLAYERS = [
       {
         playerName: "Naveen-ul-Haq",
         role: "BW",
-        price: "50 lakh",
+        price: "50 lac",
         nation: "Afghanistan",
         age: 24,
         team: "Lucknow"
@@ -626,7 +626,7 @@ export const PLAYERS = [
       {
         playerName: "Mark Wood",
         role: "BW",
-        price: "7.5 crore",
+        price: "7.5 Cr",
         nation: "England",
         age: 33,
         team: "Lucknow"
@@ -634,7 +634,7 @@ export const PLAYERS = [
       {
         playerName: "Ashton Turner",
         role: "BT",
-        price: "1 crore",
+        price: "1 Cr",
         nation: "Australia",
         age: 30,
         team: "Lucknow"
@@ -642,7 +642,7 @@ export const PLAYERS = [
       {
         playerName: "David Willey",
         role: "AR",
-        price: "2 crore",
+        price: "2 Cr",
         nation: "England",
         age: 33,
         team: "Lucknow"
@@ -650,7 +650,7 @@ export const PLAYERS = [
       {
         playerName: "Shamar Joseph",
         role: "BW",
-        price: "3 crore",
+        price: "3 Cr",
         nation: "West indies",
         age: 24,
         team: "Lucknow"
@@ -658,7 +658,7 @@ export const PLAYERS = [
       {
         playerName: "Dewald Brevis",
         role: "BT",
-        price: "3 crore",
+        price: "3 Cr",
         nation: "South Africa",
         age: 20,
         team: "Mumbai"
@@ -666,7 +666,7 @@ export const PLAYERS = [
       {
         playerName: "Tim David",
         role: "AR",
-        price: "8.25 crore",
+        price: "8.25 Cr",
         nation: "Australia",
         age: 27,
         team: "Mumbai"
@@ -674,7 +674,7 @@ export const PLAYERS = [
       {
         playerName: "Jason Behrendorff",
         role: "BW",
-        price: "75 lakh",
+        price: "75 lac",
         nation: "Australia",
         age: 33,
         team: "Mumbai"
@@ -682,7 +682,7 @@ export const PLAYERS = [
       {
         playerName: "Romario Shepherd",
         role: "AR",
-        price: "50 lakh",
+        price: "50 lac",
         nation: "West Indies",
         age: 29,
         team: "Mumbai"
@@ -690,7 +690,7 @@ export const PLAYERS = [
       {
         playerName: "Gerald Coetzee",
         role: "AR",
-        price: "5 crore",
+        price: "5 Cr",
         nation: "South Africa",
         age: 23,
         team: "Mumbai"
@@ -698,7 +698,7 @@ export const PLAYERS = [
       {
         playerName: "Dilshan Madushanka",
         role: "BW",
-        price: "4.6 crore",
+        price: "4.6 Cr",
         nation: "Sri Lanka",
         age: 23,
         team: "Mumbai"
@@ -706,7 +706,7 @@ export const PLAYERS = [
       {
         playerName: "Nuwan Thushara",
         role: "BW",
-        price: "4.8 crore",
+        price: "4.8 Cr",
         nation: "Sri Lanka",
         age: 29,
         team: "Mumbai"
@@ -714,7 +714,7 @@ export const PLAYERS = [
       {
         playerName: "Mohammad Nabi",
         role: "AR",
-        price: "1.5 crore",
+        price: "1.5 Cr",
         nation: "Afghanistan",
         age: 38,
         team: "Mumbai"
@@ -722,7 +722,7 @@ export const PLAYERS = [
       {
         playerName: "Jonny Bairstow",
         role: "WK",
-        price: "6.75 crore",
+        price: "6.75 Cr",
         nation: "England",
         age: 34,
         team: "Punjab"
@@ -730,7 +730,7 @@ export const PLAYERS = [
       {
         playerName: "Matthew Short",
         role: "BT",
-        price: "20 lakh",
+        price: "20 lac",
         nation: "Australia",
         age: 28,
         team: "Punjab"
@@ -738,7 +738,7 @@ export const PLAYERS = [
       {
         playerName: "Sam Curran",
         role: "AR",
-        price: "18.5 crore",
+        price: "18.5 Cr",
         nation: "England",
         age: 25,
         team: "Punjab"
@@ -746,7 +746,7 @@ export const PLAYERS = [
       {
         playerName: "Sikandar Raza",
         role: "AR",
-        price: "50 lakh",
+        price: "50 lac",
         nation: "Zimbabwe",
         age: 37,
         team: "Punjab"
@@ -754,7 +754,7 @@ export const PLAYERS = [
       {
         playerName: "Liam Livingstone",
         role: "BT",
-        price: "11.5 crore",
+        price: "11.5 Cr",
         nation: "England",
         age: 30,
         team: "Punjab"
@@ -762,7 +762,7 @@ export const PLAYERS = [
       {
         playerName: "Nathan Ellis",
         role: "BW",
-        price: "75 lakh",
+        price: "75 lac",
         nation: "Australia",
         age: 29,
         team: "Punjab"
@@ -770,7 +770,7 @@ export const PLAYERS = [
       {
         playerName: "Chris Woakes",
         role: "AR",
-        price: "4.2 crore",
+        price: "4.2 Cr",
         nation: "England",
         age: 34,
         team: "Punjab"
@@ -778,7 +778,7 @@ export const PLAYERS = [
       {
         playerName: "Rilee Rossouw",
         role: "BT",
-        price: "8 crore",
+        price: "8 Cr",
         nation: "South Africa",
         age: 34,
         team: "Punjab"
@@ -786,7 +786,7 @@ export const PLAYERS = [
       {
         playerName: "Jos Buttler",
         role: "BT",
-        price: "10 crore",
+        price: "10 Cr",
         nation: "England",
         age: 33,
         team: "Rajasthan"
@@ -794,7 +794,7 @@ export const PLAYERS = [
       {
         playerName: "Trent Boult",
         role: "BW",
-        price: "8 crore",
+        price: "8 Cr",
         nation: "New Zealand",
         age: 34,
         team: "Rajasthan"
@@ -802,7 +802,7 @@ export const PLAYERS = [
       {
         playerName: "Shimron Hetmyer",
         role: "BT",
-        price: "8.5 crore",
+        price: "8.5 Cr",
         nation: "West Indies",
         age: 26,
         team: "Rajasthan"
@@ -810,7 +810,7 @@ export const PLAYERS = [
       {
         playerName: "Donovan Ferreira",
         role: "AR",
-        price: "50 lakh",
+        price: "50 lac",
         nation: "South Africa",
         age: 25,
         team: "Rajasthan"
@@ -818,7 +818,7 @@ export const PLAYERS = [
       {
         playerName: "Adam Zampa",
         role: "BW",
-        price: "1.5 crore",
+        price: "1.5 Cr",
         nation: "Australia",
         age: 31,
         team: "Rajasthan"
@@ -826,7 +826,7 @@ export const PLAYERS = [
       {
         playerName: "Rovman Powell",
         role: "BT",
-        price: "7.4 crore",
+        price: "7.4 Cr",
         nation: "West Indies",
         age: 30,
         team: "Rajasthan"
@@ -834,7 +834,7 @@ export const PLAYERS = [
       {
         playerName: "Tom Kohler-Cadmore",
         role: "WK",
-        price: "40 lakh",
+        price: "40 lac",
         nation: "England",
         age: 29,
         team: "Rajasthan"
@@ -842,7 +842,7 @@ export const PLAYERS = [
       {
         playerName: "Nandre Burger",
         role: "BW",
-        price: "50 lakh",
+        price: "50 lac",
         nation: "South Africa",
         age: 28,
         team: "Rajasthan"
@@ -850,7 +850,7 @@ export const PLAYERS = [
       {
         playerName: "Faf du Plessis",
         role: "BT",
-        price: "7 crore",
+        price: "7 Cr",
         nation: "South Africa",
         age: 39,
         team: "Bangalore"
@@ -858,7 +858,7 @@ export const PLAYERS = [
       {
         playerName: "Glenn Maxwell",
         role: "AR",
-        price: "11 crore",
+        price: "11 Cr",
         nation: "Australia",
         age: 35,
         team: "Bangalore"
@@ -866,7 +866,7 @@ export const PLAYERS = [
       {
         playerName: "Reece Topley",
         role: "BW",
-        price: "1.9 crore",
+        price: "1.9 Cr",
         nation: "England",
         age: 29,
         team: "Bangalore"
@@ -874,7 +874,7 @@ export const PLAYERS = [
       {
         playerName: "Will Jacks",
         role: "AR",
-        price: "3.2 crore",
+        price: "3.2 Cr",
         nation: "England",
         age: 25,
         team: "Bangalore"
@@ -882,7 +882,7 @@ export const PLAYERS = [
       {
         playerName: "Cameron Green",
         role: "AR",
-        price: "17.5 crore",
+        price: "17.5 Cr",
         nation: "Australia",
         age: 24,
         team: "Bangalore"
@@ -890,7 +890,7 @@ export const PLAYERS = [
       {
         playerName: "Alzarri Joseph",
         role: "BW",
-        price: "11.5 crore",
+        price: "11.5 Cr",
         nation: "West Indies",
         age: 27,
         team: "Bangalore"
@@ -898,7 +898,7 @@ export const PLAYERS = [
       {
         playerName: "Tom Curran",
         role: "AR",
-        price: "1.5 crore",
+        price: "1.5 Cr",
         nation: "England",
         age: 28,
         team: "Bangalore"
@@ -906,7 +906,7 @@ export const PLAYERS = [
       {
         playerName: "Lockie Ferguson",
         role: "BW",
-        price: "2 crore",
+        price: "2 Cr",
         nation: "New Zealand",
         age: 32,
         team: "Bangalore"
@@ -914,7 +914,7 @@ export const PLAYERS = [
       {
         playerName: "Glenn Phillips",
         role: "BT",
-        price: "1.5 crore",
+        price: "1.5 Cr",
         nation: "New Zealand",
         age: 27,
         team: "Hyderabad"
@@ -922,7 +922,7 @@ export const PLAYERS = [
       {
         playerName: "Heinrich Klaasen",
         role: "BT",
-        price: "5.25 crore",
+        price: "5.25 Cr",
         nation: "South Africa",
         age: 32,
         team: "Hyderabad"
@@ -930,7 +930,7 @@ export const PLAYERS = [
       {
         playerName: "Marco Jansen",
         role: "AR",
-        price: "4.2 crore",
+        price: "4.2 Cr",
         nation: "South Africa",
         age: 23,
         team: "Hyderabad"
@@ -938,7 +938,7 @@ export const PLAYERS = [
       {
         playerName: "Fazalhaq Farooqi",
         role: "BW",
-        price: "50 lakh",
+        price: "50 lac",
         nation: "Afghanistan",
         age: 23,
         team: "Hyderabad"
@@ -946,7 +946,7 @@ export const PLAYERS = [
       {
         playerName: "Travis Head",
         role: "BT",
-        price: "6.8 crore",
+        price: "6.8 Cr",
         nation: "Australia",
         age: 29,
         team: "Hyderabad"
@@ -954,7 +954,7 @@ export const PLAYERS = [
       {
         playerName: "Wanindu Hasaranga",
         role: "AR",
-        price: "1.5 crore",
+        price: "1.5 Cr",
         nation: "Sri Lanka",
         age: 26,
         team: "Hyderabad"
@@ -962,7 +962,7 @@ export const PLAYERS = [
       {
         playerName: "Pat Cummins",
         role: "AR",
-        price: "20.5 crore",
+        price: "20.5 Cr",
         nation: "Australia",
         age: 30,
         team: "Hyderabad"

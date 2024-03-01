@@ -12,7 +12,10 @@
   }
 
   .design-border{
-    border-color: #d3d2cf;
+    border: 2px solid #d3d2cf;
+  }
+  .win-border{
+    border: 2px solid #174fbb;
   }
 
   .design-text{
@@ -24,14 +27,16 @@
   .inter {
     font-family: 'Inter';
   }
-  .design-text-value{
-    color: #747474;
+  .text-design-black{
+    color:#1e293b;
   }
   .win-blue {
     background-color: #5c88dd;
     color: white;
   }
-
+  .detail-color{
+    color:#747474 !important;
+  }
   .win-blue-head{
     color: white;
     background-color: #174fbb;
@@ -46,4 +51,39 @@
   .bg-red-button:hover{
     background-color: #333333 !important;
   }
+  .age {
+    font-weight: 800;
+    color: #D84F4F;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white; /* Creates an outline effect */
+    /* outline: 1px solid oldlace; Adds a solid outline   */
+  }
+  .head {
+    height: 57px;
+  }
+  .hint-color{
+    background-color: #4d4d4d;
+    border-radius: 4px;
+    color: #f0d121;
+    padding: 2px;
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+
+  .live-color{
+    background-color: #4d4d4d;
+    border-radius: 4px;
+    color: #f05321;
+    padding: 2px;
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+  .search {
+    font-weight: 900;
+  }
+  .share {
+    background-color: #4fd883 !important;
+    color: white
+  }
+  
+  
 }

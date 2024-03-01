@@ -6,6 +6,8 @@ import { CiSearch } from "react-icons/ci";
 import { FaHeart } from "react-icons/fa";
 import axios from "axios";
 import { set } from "mongoose";
+import InputComponent from "../components/InputComponent";
+import Card from "../components/Card";
 
 const Play = () => {
 
@@ -33,6 +35,9 @@ const Play = () => {
     
     const curDate = new Date();
     const curDay = curDate.getDate();
+
+
+
     function generatePlayer(day){
         const selectedPlayer = [];
         for(let i=0; i<4; i++){
@@ -162,7 +167,7 @@ const Play = () => {
                 setPlayerValue(i, 'team', guess.team);
             }
             if (guess.age === hero[i].age) {
-                setPlayerValue(i, 'role', guess.role);
+                setPlayerValue(i, 'age', guess.age);
             }
             if (guess.nation.toLowerCase() === hero[i].nation.toLowerCase()) {
                 setPlayerValue(i, 'nation', guess.nation);
@@ -199,6 +204,12 @@ const Play = () => {
         setHintLeft((prevHint) => prevHint + 1);
         setReveal(false);
     }
+
+    const showPlayer = (value) => {
+        setInputValue(value);
+        setInterval(2000);
+        setInputValue('');
+    };
   const keyboardLayout = [
     ['Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P'],
     ['A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L'],
@@ -231,6 +242,7 @@ const Play = () => {
     } else if (key === 'Enter') {
         setInputValue(bestSuggestion);
         const value = bestSuggestion;
+        showPlayer(value);
         compareInput(value);
         setInputValue('');
         setBestSuggestion('');
@@ -334,76 +346,107 @@ const checkDisableButton = (key) => {
     // Otherwise, disable the button if there's no following suggestion
     return !hasFollowingSuggestion;
 };
-//  useEffect(() => {
-    
-//     const updateToDB = async () => {
-//         const q = await axios.get('http://localhost:3000/stats');
-//         const res = q.data;
-//         res.totalGame += 1;
-//         console.log(res);
 
-//     }
+    // const show = () => {
+    //     return displayInputInSuggestion();
+    // }
 
-//     if(done){
-//         updateToDB();
-//     }
-
-//  },[done]);
 
   return (
     <>
-    <div className="all">
-        {LivesLeft===0 ? <h1>game over</h1> : done ? <h1>you win</h1> : <div className="px-4 h-100 mt-20 flex justify-center items-center">
+    <div className="bg-design-white">
+        { <div className="px-4 flex justify-center items-center">
             <div className="w-25">
             <div className="px-4 flex justify-between items-center">
-            <div className="w-25 flex items-center justify-center">
-                <h2 className="text-sm font-bold inline text-center"><CiSearch />{HintLeft}</h2>
+            <div className="flex items-center justify-between">
+            <div className="flex items-center hint-color mb-1 ">
+                <h2 className="text-xl search inline text-center pr-1 "><CiSearch /></h2>
+                <h2 className="text-base text-white font-bold inline pr-1 mb-1">{HintLeft}</h2>
             </div>
-            <div className="w-25">
-                {/* Center section for game panel */}
-                <h2 className="text-xl font-bold mb-4 text-center">Game Panel</h2>
             </div>
-            <div className="w-25 text-right">
-                {/* Right section for lives */}
-                <h2 className="text-sm font-bold text-center"><FaHeart />{LivesLeft}</h2>
-            </div>
-        </div>
-                <div className="grid grid-cols-4 gap-1 text-center">
 
-                    <PlayerCard player={player1} hero={hero[0]} isGuessed={guessPlayer1} />
-                    <PlayerCard player={player2} hero={hero[1]} isGuessed={guessPlayer2} />
-                    <PlayerCard player={player3} hero={hero[2]} isGuessed={guessPlayer3} />
-                    <PlayerCard player={player4} hero={hero[3]} isGuessed={guessPlayer4} />
+            <div className="w-25">
+                <h2 className="text-lg font-inter font-normal text-center">Find today&#39;s players</h2>
+            </div>
+            <div className="flex items-center justify-between">
+            <div className="flex items-center live-color p-1 mb-1">
+                <h2 className="text-xl search inline text-center mr-1"><FaHeart /></h2>
+                <h2 className="text-base text-white mb-1 font-bold inline">{LivesLeft}</h2>
+            </div>
+            </div>
+            </div>
+                <div className="grid grid-cols-4 gap-1 text-center">
+                    <Card player={player1} hero={hero[0]} isGuessed={guessPlayer1} />
+                    <Card player={player2} hero={hero[1]} isGuessed={guessPlayer2} />
+                    <Card player={player3} hero={hero[2]} isGuessed={guessPlayer3} />
+                    <Card player={player4} hero={hero[3]} isGuessed={guessPlayer4} />
                 </div>
             </div>
         </div>}
-        <div className={`input text-gray-600 relative`}>
+        <div className={`input text-gray-600 text-center`}>
             <span>{inputValue ? displayInputInSuggestion() : "Enter text here.."}</span>
         </div>
-        {reveal?(
-            <div className="keyboard py-20 px-40 bg-white">
-            <button onClick={undo} className="bg-red-button text-white py-2 px-4 rounded">Cancel</button>
-        </div>
-        
-        ) 
-        : 
-        (<div className="keyboard ">
-            {keyboardLayout.map((row, rowIndex) => (
-                <div key={rowIndex} className="keyboard-row">
-                    {row.map((key, keyIndex) => (
-                        <button
-                            key={keyIndex}
-                            onClick={() => handleKeyPress(key)}
-                            className={key === "Space" ? "space-key" : ""}
-                            disabled={checkDisableButton(key)}
-                        >
-                            {key}
-                        </button>
-                    ))}
+        {LivesLeft === 0 ? (
+            <>
+                <div className="keyboard bg-design-white flex flex-col items-center justify-center">
+                    <div className="text-center">
+                        <h2 className="text-xl font-bold mb-4">You have lost all your lives</h2>
+                        <div className="flex items-center justify-center mb-4">
+                            <button onClick={()=> alert("shared")} className="share py-2 px-4 rounded mr-2">Share</button>
+                        </div>
+                        <div className="flex flex-wrap justify-center">
+                            <div className="mx-4 my-2">
+                                <p className="text-sm font-bold">Game Completed</p>
+                                <p className="text-lg font-bold">10</p>
+                            </div>
+                            <div className="mx-4 my-2">
+                                <p className="text-sm font-bold">Total Games</p>
+                                <p className="text-lg font-bold">100</p>
+                            </div>
+                            <div className="mx-4 my-2">
+                                <p className="text-sm font-bold">Streak</p>
+                                <p className="text-lg font-bold">5</p>
+                            </div>
+                            <div className="mx-4 my-2">
+                                <p className="text-sm font-bold">Highest Streak</p>
+                                <p className="text-lg font-bold">10</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            ))}
-        </div>)
-        }
+
+            </>
+        ) : (
+            <>
+            {reveal?(
+                <div className="keyboard py-20 px-40 bg-design-white">
+                <button onClick={undo} className="bg-red-button text-white py-2 px-4 rounded">Cancel</button>
+            </div>
+            ) 
+            : 
+            (<div className="keyboard bg-design-white">
+                {keyboardLayout.map((row, rowIndex) => (
+                    <div key={rowIndex} className="keyboard-row">
+                        {row.map((key, keyIndex) => (
+                            <button
+                                key={keyIndex}
+                                onClick={() => handleKeyPress(key)}
+                                className={
+                                    key === "Space" ? "space-key" : 
+                                    key === "Enter" ? "guess-key" :
+                                    key === "Hint" ? "hint-key" :
+                                ""}
+                                disabled={checkDisableButton(key)}
+                            >
+                                {key}
+                            </button>
+                        ))}
+                    </div>
+                ))}
+            </div>)
+            }
+            </>
+        )}
     </div>
 </>
 
